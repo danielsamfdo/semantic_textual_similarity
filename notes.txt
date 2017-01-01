@@ -1,0 +1,10 @@
+Features:
+  1) POS TAGS
+  2) LEMMA TAGS
+  3) CHAR TAGS
+  4) DEPENDENCY PARSERS : 
+  5) Computed Weight's
+  6) Word 2 Vec
+  
+
+TO DO CHECK THE HSTACK IN STACKING WORD2VEC FEATURES

@@ -1,0 +1,7 @@
+*.pkl
+*.pyc
+*.ipynb_checkpoints
+*.DS_Store
+*.dat
+ppdb-2.0-tldr
+

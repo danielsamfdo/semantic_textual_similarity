@@ -1,0 +1,25 @@
+1) Analysis of sentences 
+2) Check only using Word 2 Vec features - Done
+3) Formulate Template - DONE
+4) Related Work 
+5) Test  hyper parameters SVM
+Just use one grams
+Just use bi grams
+Just use trigrams
+
+
+Cross Validation - to get the best parameters
+
+
+The group is good
+The group is good
+The problem is simple
+The problem is very easy
+Today is a Friday
+That person is not related to me
+A quick brown fox jumps over the lazy dog
+A quick brown dog jumps over the lazy fox
+He is a Bachelor
+He is an unmarried man
+It's an Orange
+It's Orange

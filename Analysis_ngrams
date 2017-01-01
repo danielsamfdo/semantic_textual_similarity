@@ -1,0 +1,246 @@
+Just Unigram
+
+Error in Estimation of Linear Regression - Training : 0.100857048926
+Error in Estimation of Linear Regression - Testing : 2.32376688624
+Total Correlation Measure Pearson LR 0.685224240145
+loaded
+Trying C = 10000000000.0,  Gamma = 1000
+Error in Estimation of SVM - Training : 0.102548773199
+Error in Estimation of SVM - Testing : 1.51426774804
+Total Correlation Measure Pearson SVM 0.866875178608
+Iteration 1, loss = 3.24292755
+Iteration 2, loss = 6.49838055
+Iteration 3, loss = 2.52495810
+Iteration 4, loss = 0.80190437
+Iteration 5, loss = 0.37570086
+Iteration 6, loss = 0.24319495
+Iteration 7, loss = 0.19482645
+Iteration 8, loss = 0.15651739
+Iteration 9, loss = 0.14313249
+Iteration 10, loss = 0.15061457
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Error in Estimation of MLP - Training : 0.268713162441
+Error in Estimation of MLP - Testing : 1.68271886824
+Total Correlation Measure Pearson MLP 0.787521984405
+
+
+
+
+Just Bigram
+
+Error in Estimation of Linear Regression - Training : 0.0287825460639
+Error in Estimation of Linear Regression - Testing : 1.79912489171
+Total Correlation Measure Pearson LR 0.0550751213591
+loaded
+Trying C = 10000000000.0,  Gamma = 1000
+Error in Estimation of SVM - Training : 0.102447345711
+Error in Estimation of SVM - Testing : 1.51443753518
+/Users/danielsampetethiyagu/github/semantic_similarity/lib/utilities.py:57: RuntimeWarning: divide by zero encountered in double_scalars
+  return numerator/denominator
+Total Correlation Measure Pearson SVM inf
+Iteration 1, loss = 9.16873241
+Iteration 2, loss = 63.61243387
+Iteration 3, loss = 20.90833361
+Iteration 4, loss = 2.39516044
+Iteration 5, loss = 0.86758082
+Iteration 6, loss = 0.53487209
+Iteration 7, loss = 0.38172966
+Iteration 8, loss = 0.29181985
+Iteration 9, loss = 0.23461933
+Iteration 10, loss = 0.20391164
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Error in Estimation of MLP - Training : 0.268802177134
+Error in Estimation of MLP - Testing : 1.93773674153
+Total Correlation Measure Pearson MLP -0.00986838359095
+
+Just Trigram
+
+Error in Estimation of Linear Regression - Training : 0.0232916389789
+Error in Estimation of Linear Regression - Testing : 1.5197655618
+Total Correlation Measure Pearson LR 0.151331437278
+loaded
+Trying C = 10000000000.0,  Gamma = 1000
+Traceback (most recent call last):
+  File "semantic_similarity.py", line 240, in <module>
+    main()
+  File "semantic_similarity.py", line 57, in main
+    train_and_test_SVM_model(training_documents, test_documents, training_documents_answers, test_documents_answers, load=True, w2vec_model=w2vec_model, use_w2_vec_model=False)
+  File "semantic_similarity.py", line 232, in train_and_test_SVM_model
+    svm.support_vector_machines(train_documents,  test_documents, training_documents_answers, test_documents_answers, load=load, w2vec_model=w2vec_model, use_w2_vec_model=use_w2_vec_model)
+  File "/Users/danielsampetethiyagu/github/semantic_similarity/models/svm.py", line 112, in support_vector_machines
+    predicted_answers = svm_model.predict(X_train_minmax)
+NameError: global name 'X_train_minmax' is not defined
+danielsampetethiyagu@Daniels-MacBook-Pro semantic_similarity (master)*$ python semantic_similarity.py
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/gensim/utils.py:1015: UserWarning: Pattern library is not installed, lemmatization won't be available.
+  warnings.warn("Pattern library is not installed, lemmatization won't be available.")
+The Total Corpus Data is about 29556
+Error in Estimate is 1.145017669
+Pearsons Correlation Estimate0.489565856298
+Training on 23644 documents
+Testing on 5912 documents
+Iteration 1, loss = 2.96557287
+Iteration 2, loss = 1.00764203
+Iteration 3, loss = 0.69686435
+Iteration 4, loss = 0.46565017
+Iteration 5, loss = 0.30307604
+Iteration 6, loss = 0.20176499
+Iteration 7, loss = 0.14327259
+Iteration 8, loss = 0.10995088
+Iteration 9, loss = 0.09123633
+Iteration 10, loss = 0.07935034
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Error in Estimation of MLP - Training : 0.193859871696
+Error in Estimation of MLP - Testing : 1.62997806267
+Total Correlation Measure Pearson MLP -0.00185392793622
+
+
+Just 4 gram
+Error in Estimation of Linear Regression - Training : 0.0204535609473
+Error in Estimation of Linear Regression - Testing : 1.50150246532
+Total Correlation Measure Pearson LR 0.148571049011
+loaded
+Trying C = 10000000000.0,  Gamma = 1000
+Error in Estimation of SVM - Training : 0.102441738941
+Error in Estimation of SVM - Testing : 1.50966660945
+Total Correlation Measure Pearson SVM 0.0829155125613
+Iteration 1, loss = 2.94206853
+Iteration 2, loss = 0.92091804
+Iteration 3, loss = 0.55779197
+Iteration 4, loss = 0.34520490
+Iteration 5, loss = 0.21775423
+Iteration 6, loss = 0.14253087
+Iteration 7, loss = 0.10032804
+Iteration 8, loss = 0.07894184
+Iteration 9, loss = 0.06960028
+Iteration 10, loss = 0.06666579
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Error in Estimation of MLP - Training : 0.178002934416
+Error in Estimation of MLP - Testing : 1.70267288071
+Total Correlation Measure Pearson MLP -0.0709851092956
+
+
+
+
+
+FROM 1-4 ngrams using WORD2VEC
+
+Error in Estimation of Linear Regression - Training : 0.0174953958
+Error in Estimation of Linear Regression - Testing : 1.77784325094
+Total Correlation Measure Pearson LR 0.0676645253863
+loaded
+Trying C = 10000000000.0,  Gamma = 1000
+Error in Estimation of SVM - Training : 0.102213311656
+Error in Estimation of SVM - Testing : 1.50962679066
+Total Correlation Measure Pearson SVM 0.0829166682893
+Iteration 1, loss = 2.12447381
+Iteration 2, loss = 0.91982003
+Iteration 3, loss = 0.65595652
+Iteration 4, loss = 0.45067881
+Iteration 5, loss = 0.30262669
+Iteration 6, loss = 0.20828935
+Iteration 7, loss = 0.15332667
+Iteration 8, loss = 0.12111718
+Iteration 9, loss = 0.10055778
+Iteration 10, loss = 0.08745365
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Error in Estimation of MLP - Training : 0.189268618374
+Error in Estimation of MLP - Testing : 1.5307464777
+Total Correlation Measure Pearson MLP 0.0506801543118
+
+
+
+
+
+######## JUST WORD2VEC
+
+Error in Estimation of Linear Regression - Training : 1.05063159517
+Error in Estimation of Linear Regression - Testing : 1.55179761523
+Total Correlation Measure Pearson LR 0.0321299179906
+loaded
+Trying C = 10000000000.0,  Gamma = 1000
+Error in Estimation of SVM - Training : 0.102846447585
+Error in Estimation of SVM - Testing : 1.5084984106
+Total Correlation Measure Pearson SVM 0.0810451861166
+Iteration 1, loss = 1.99997354
+Iteration 2, loss = 1.05698316
+Iteration 3, loss = 1.00391606
+Iteration 4, loss = 0.97146369
+Iteration 5, loss = 0.94821732
+Iteration 6, loss = 0.92886302
+Iteration 7, loss = 0.91527033
+Iteration 8, loss = 0.90225183
+Iteration 9, loss = 0.89104184
+Iteration 10, loss = 0.88327617
+/Users/danielsampetethiyagu/anaconda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Error in Estimation of MLP - Training : 1.08051265172
+Error in Estimation of MLP - Testing : 1.52986480822
+Total Correlation Measure Pearson MLP 0.058971454314
+
+
+The group is good The group is good
+LR
+1.83604655053 1
+SVM
+2.92609287764 1
+MLP
+1.20579549407 1
+W2Vec
+4.78376888724 4.78376888724
+5.0 1
+The problem is simple The problem is very easy
+LR
+6.87504179985 1
+SVM
+2.92609287764 1
+MLP
+2.77458430529 1
+W2Vec
+5.56657423017 6.58399365121
+4.34633466204 1
+Today is a Friday That person is not related to me
+LR
+2.24049965535 1
+SVM
+2.92609287764 1
+MLP
+2.2409247065 1
+W2Vec
+4.202176155 7.89175010318
+2.35800265008 1
+A quick brown fox jumps over the lazy dog A quick brown dog jumps over the lazy fox
+LR
+2.77325057872 1
+SVM
+2.92609287764 1
+MLP
+3.05029292155 1
+W2Vec
+11.0994569016 11.0994569016
+5.0 1
+He is a Bachelor He is an unmarried man
+LR
+3.47867239233 1
+SVM
+2.92609287764 1
+MLP
+2.0788179417 1
+W2Vec
+5.3550452757 6.81492081306
+2.67977048758 1
+It's an Orange It's Orange
+LR
+2.99663388585 1
+SVM
+2.92609287764 1
+MLP
+0.831999952642 1
+W2Vec
+4.94620063948 4.07472379879
+4.4948383394 1
+
